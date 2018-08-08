@@ -1,0 +1,92 @@
+#player {
+  width: 550px;
+  height: 750px;
+  border: 2px solid;
+  margin: auto;
+}
+
+header {
+  border-bottom: 2px solid;
+  background-color: lightGray;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+#song-list {
+  height: 550px;
+}
+
+.song, .selected-song {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  height: 45px;
+  span {
+    margin-left: 20px;
+    display: block;
+  }
+  i {
+    margin-left: 10px;
+  }
+  .title {
+    font-weight: bold;
+  }
+  .fa-pause {
+    display: none;
+  }
+}
+
+.selected-song {
+  background-color: lightBlue;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid;
+  height: 130px;
+  background-color: lightBlue;
+  .fa-step-backward {
+    margin-left: 10px;
+  }
+  .fa-pause-circle {
+    display: none;
+  }
+}
+
+.fa-crown {
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 100%;
+}
+
+.selected-song {
+  .fa-play {
+    display: none;
+  }
+  .fa-pause{
+    display: inline-block;
+  }
+}
+
+.song-playing {
+  .fa-play-circle {
+    display: none;
+  }
+  .fa-pause-circle{
+    display: inline-block;
+  }
+}
+
+#current-track {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#track-info, #artist {
+  margin-left: 10px;
+  display: block;
+
+}
